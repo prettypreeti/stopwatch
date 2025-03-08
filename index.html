@@ -8,11 +8,17 @@
         body{
             background-color: black;
         }
+        h1{
+            color: gray;
+            text-align: center;
+            font-size: 100px;
+            margin-top: 50px;
+        }
         .container{
             /* background-color: aqua; */
             align-items: center;
             color: bisque;
-            margin-left: 600px;
+            margin-left: 800px;
             margin-top: 200px;
             font-size: 70px;
         }
@@ -41,6 +47,7 @@
              width: 80px;
             text-align: center;
             color: black;
+            
         }
         .button .reset{
             padding-right: 40px;
@@ -54,6 +61,8 @@
     </style>
 </head>
 <body>
+    <h1>STOPWATCH</h1>
+    
     <div class="container">
         <div class="stopwatch" id="stopwatch">00:00:00</div>
         <div class="button">
@@ -62,6 +71,7 @@
             <div class="reset" onclick="reset()">reset</div>
         </div>
     </div>
+    
     <script>
         let timer,seconds=0;
         const stopwatch = document.getElementById('stopwatch');
